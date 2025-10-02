@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoItem from "./components/TodoItem";
+import TodoItem from "./TodoItem";
 
 //componentes Todolist que recebe a lista de tarefas para executar
 

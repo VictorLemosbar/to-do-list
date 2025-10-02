@@ -4,7 +4,7 @@ import React from 'react';
 export default function TodoItem({todo, removeTask}){
     return(
         <li sytle={styles.item}>
-            {todo.date} --- {todo.hora} --- {todo.text}
+            {todo.date} --- {todo.hora} --- {todo.text}---
             <button style={styles.button}onClick={()=>removeTask(todo.id)}>Delete</button>
         </li>
     );
@@ -13,14 +13,15 @@ const styles = {
     item : {
         padding: "10px",
         border: "1px solid #ccc",
+        background:"red",
         borderRadius: "15px",
         display: "flex",
         justifycontent:"space-between",
-        alignIens:"center",
+        alignItens:"center",
     },
 
     button:{
-        backgroud:"red",
+        backgroundColor:"red",
         color:"White",
         border:"none",
         padding:"5px",
