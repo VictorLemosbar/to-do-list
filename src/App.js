@@ -29,6 +29,10 @@ export default function App() {
     setTodos([...todos, newTodo]);
     setNewTask("");
 
+    const removeTask = (id) => {
+      setTodos(todos.filter((todo) => todo.id !== id));
+    }
+
   };
 
   //funçao que remove uma tarefa pelo id
@@ -75,6 +79,14 @@ export default function App() {
       </div>
     </div>
   )
+
+
+  const styles = {
+    container: { maxWidht: "600px", margin: "50px auto", textAlign: "center", fontFamily: "Arial, sanserif" },
+    inputdh: { padding: "10px", widht: "39%", marginRight: "5px", borderRadius: "10px" },
+    input: { padding: "10px", widht: "70%", marginRight: "5px" },
+    button: { padding: "10px", cursor: "pointer" }
+  }
 
 
 }
